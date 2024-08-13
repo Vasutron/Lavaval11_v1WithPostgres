@@ -6,6 +6,7 @@
 LaravelDBServer
 
 ## Livewire
+https://www.youtube.com/watch?v=Tg9COU-rtx0&list=PLqDySLfPKRn543NM_fTrJRdhjBgsogzSC&index=8&ab_channel=YeloCode
 
 
 ## License
