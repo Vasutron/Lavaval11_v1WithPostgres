@@ -22,8 +22,8 @@
     {{--  <body class="font-sans antialiased dark:bg-black dark:text-white/50">  --}}
     <body class="antialiased">
         <div class="flex">
-            <div class="">
-                @livewire('users-list')
+            <div class="w-2/4 mx-auto pt-10">
+                @livewire('users-list', ['lazy' => true])
             </div>
             {{--  <div class="w-2/4">
                 @livewire('register-form')
