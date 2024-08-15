@@ -23,7 +23,8 @@
     <body class="antialiased">
         <div class="flex">
             <div class="w-2/4 mx-auto pt-10">
-                @livewire('users-list', ['lazy' => true])
+                {{--  @livewire('users-list', ['lazy' => true])  --}}
+                @livewire('users-list')
             </div>
             {{--  <div class="w-2/4">
                 @livewire('register-form')

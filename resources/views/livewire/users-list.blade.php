@@ -1,5 +1,16 @@
-<div wire:poll.keep-alive.2s class="mt-10 p-5 mx-auto">
-    <h2 class="text-2xl mb-auto mt-2 md-2">Users List</h2>
+{{--  <div wire:poll.keep-alive.2s class="mt-10 p-5 mx-auto">  --}}
+<div class="mt-10 p-5 mx-auto">
+    <h2 class="text-2xl mb-3">Users List</h2>
+
+    <input wire:model.live.throttle.300ms='search' type="text"
+        placeholder="Search..."
+        class="block w-full px-4 py-2 border border-gray-300 rounded mt-3">
+    <button wire:click="update" type="button"
+        class="block mt-3 px-4 py-2 bg-teal-500 text-white font-semibold rounded hover:bg-teal-600">
+        SEARCH
+    </button>
+
+    <br>
     <div class="relative overflow-x-auto shawon-md sm:rounded-lg">
         <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
             <thead class="text-xs text-gray-700 uppercase dark:text-gray-300 bg-gray-50 dark:bg-gray-800">
@@ -10,7 +21,6 @@
                 </tr>
             </thead>
             <tbody>
-                {{-- Loop through the users and display the data --}}
                 @foreach ($users as $user)
                     <tr class="bg-white border-b border-gray-200 dark:bg-gray-900 dark:border-gray-700">
                         <td scope="row"
@@ -29,9 +39,12 @@
                 @endforeach
             </tbody>
         </table>
+
+        <div>
+            {{ $users->links() }}
+        </div>
     </div>
-    <div>
-        {{ $users->links() }}
-    </div>
+
+
 
 </div>
