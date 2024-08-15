@@ -22,12 +22,12 @@
     {{--  <body class="font-sans antialiased dark:bg-black dark:text-white/50">  --}}
     <body class="antialiased">
         <div class="flex">
-            <div class="w-2/4">
+            <div class="">
                 @livewire('users-list')
             </div>
-            <div class="w-2/4">
+            {{--  <div class="w-2/4">
                 @livewire('register-form')
-            </div>
+            </div>  --}}
         </div>
     </body>
 
