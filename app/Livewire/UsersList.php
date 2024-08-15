@@ -4,14 +4,18 @@ namespace App\Livewire;
 
 use App\Models\User;
 use Livewire\Attributes\On;
+use Livewire\Attributes\Title;
+use Livewire\Attributes\Url;
 use Livewire\Component;
 use Livewire\WithPagination;
 
+#[Title('Users List')]
 class UsersList extends Component
 {
     use WithPagination;
 
-    public $search;
+    #[Url(as : 's', history : true)]
+    public $search = '';
 
     #[On('user-created')]
     public function updateList($user = null)

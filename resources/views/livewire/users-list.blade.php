@@ -2,7 +2,7 @@
 <div class="mt-10 p-5 mx-auto">
     <h2 class="text-2xl mb-3">Users List</h2>
 
-    <input wire:model.live.throttle.300ms='search' type="text"
+    <input wire:model.live='search' type="text"
         placeholder="Search..."
         class="block w-full px-4 py-2 border border-gray-300 rounded mt-3">
     <button wire:click="update" type="button"
