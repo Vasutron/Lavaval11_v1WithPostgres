@@ -36,9 +36,19 @@
         @endif
 
         <div wire:loading wire:target="image">
-            <span class="text-green-500">Uploading...</span>
+            <span class="text-green-500">Uploading ...</span>
         </div>
 
-        <button class="block mt-3 px-4 py-2 bg-teal-500 text-white font-semibold rounded hover:bg-teal-600">Register+</button>
+        <div wire:loading.delay.longest>
+            <span class="text-green-500">ending ...</span>
+        </div>
+
+        <button wire:loading.class.remove="bg-blue-500" wire:loading.attr="disabled" type="submit"
+            class="block mt-3 px-4 py-2 bg-teal-500 text-white font-semibold rounded hover:bg-teal-600">Register+
+        </button>
     </form>
+
+    <div class="text-center mt-5"></div>
+        <p class="text-center text-sm text-gray-500">Version 1.0.0</p>
+    </div>
 </div>
