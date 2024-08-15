@@ -8,6 +8,9 @@ LaravelDBServer
 ## Livewire
 https://www.youtube.com/watch?v=Tg9COU-rtx0&list=PLqDySLfPKRn543NM_fTrJRdhjBgsogzSC&index=8&ab_channel=YeloCode
 
+## Deploy Docker
+
+Cr. https://www.youtube.com/watch?v=6ANYowpB910&ab_channel=HanieAsemi
 
 ## License
 
